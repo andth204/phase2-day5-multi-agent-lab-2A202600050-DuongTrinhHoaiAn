@@ -1,0 +1,92 @@
+{
+  "run_id": "20260506_051406_0c75be",
+  "started_at": "2026-05-06T05:14:06.357233+00:00",
+  "spans": [
+    {
+      "name": "researcher.search",
+      "started_at": "2026-05-06T05:14:21.899945+00:00",
+      "duration_seconds": 0.0004,
+      "attributes": {
+        "query": "Research GraphRAG state-of-the-art and write a 500-word summary",
+        "n_sources": 4
+      },
+      "status": "ok"
+    },
+    {
+      "name": "researcher.llm",
+      "started_at": "2026-05-06T05:14:21.900881+00:00",
+      "duration_seconds": 8.6733,
+      "attributes": {
+        "tokens_in": 360,
+        "tokens_out": 501
+      },
+      "status": "ok"
+    },
+    {
+      "name": "worker.researcher",
+      "started_at": "2026-05-06T05:14:21.899922+00:00",
+      "duration_seconds": 8.6755,
+      "attributes": {},
+      "status": "ok"
+    },
+    {
+      "name": "analyst.llm",
+      "started_at": "2026-05-06T05:14:30.576431+00:00",
+      "duration_seconds": 5.4863,
+      "attributes": {
+        "tokens_in": 636,
+        "tokens_out": 416
+      },
+      "status": "ok"
+    },
+    {
+      "name": "worker.analyst",
+      "started_at": "2026-05-06T05:14:30.576392+00:00",
+      "duration_seconds": 5.4877,
+      "attributes": {},
+      "status": "ok"
+    },
+    {
+      "name": "writer.llm",
+      "started_at": "2026-05-06T05:14:36.065969+00:00",
+      "duration_seconds": 8.0608,
+      "attributes": {
+        "tokens_in": 1106,
+        "tokens_out": 642
+      },
+      "status": "ok"
+    },
+    {
+      "name": "worker.writer",
+      "started_at": "2026-05-06T05:14:36.065863+00:00",
+      "duration_seconds": 8.0628,
+      "attributes": {},
+      "status": "ok"
+    },
+    {
+      "name": "critic.llm",
+      "started_at": "2026-05-06T05:14:44.130417+00:00",
+      "duration_seconds": 2.6028,
+      "attributes": {
+        "tokens_in": 1290
+      },
+      "status": "ok"
+    },
+    {
+      "name": "workflow.run",
+      "started_at": "2026-05-06T05:14:21.899631+00:00",
+      "duration_seconds": 24.8356,
+      "attributes": {
+        "query": "Research GraphRAG state-of-the-art and write a 500-word summary",
+        "total_iterations": 4,
+        "route_history": [
+          "researcher",
+          "analyst",
+          "writer",
+          "done"
+        ]
+      },
+      "status": "ok"
+    }
+  ]
+}
